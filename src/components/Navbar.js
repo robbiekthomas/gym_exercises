@@ -6,16 +6,20 @@ import { Button, Typography, Toolbar, Box, AppBar } from "@mui/material";
 
 const Navbar = () => (
   <Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static" sx={{bgcolor:'white', color:'black'}}>
+    <AppBar position="static" sx={{ bgcolor: "white", color: "black" }}>
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Revelation
+        <Typography
+          variant="h4"
+          component="div"
+          sx={{ flexGrow: 1, fontStyle: "italic" }}
+        >
+          <Button href="/" sx={{ fontSize: "34px", textDecoration: 'none', color: 'black' }}>Revelation</Button>
         </Typography>
 
-        <Button href="/" color="inherit">
+        <Button href="/" color="inherit" sx={{ fontSize: "24px" }}>
           Home
         </Button>
-        <Button href="#exercises" color="inherit">
+        <Button href="#exercises" color="inherit" sx={{ fontSize: "24px" }}>
           Exercises
         </Button>
       </Toolbar>
