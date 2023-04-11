@@ -1,51 +1,48 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 
-import HeroBannerImage from "../assets/images/banner.png";
 
 const HeroBanner = () => {
   return (
     <Box
       sx={{
-        mt: { lg: "212px", xs: "70px" },
-        ml: { sm: "50px" },
+        width: "100vw",
+        height: "800px",
+        "text-align": "center",
+        backgroundImage: 'url("https://rare-gallery.com/mocahbig/65674-Woman-Brunette-GymGym-4k-Ultra-HD-Wallpaper.jpg")',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
-      position="relative"
-      p="20"
+     
     >
-      <Typography color="#FF2625" fontWeight="600" fontSize="26px">
+      <Typography color="white" fontWeight="600" fontSize="36px">
         {" "}
-        Fitness Club
+        Every exercise for <br/> every muscle group
       </Typography>
       <Typography
         fontWeight={700}
-        sx={{ fontSize: { lg: "44px", xs: "40px" } }}
+        sx={{ fontSize: { lg: "104px", xs: "64px" }, color:"white", fontStyle: 'italic', }}
         mb="23px"
         mt="30px"
       >
-        Sweat, Smile <br /> and Repeat
+        Revelation
       </Typography>
-      <Typography fontSize="22px" lineHeight="35px" mb={4}>
-        Check out the most effective exercises
+      <Typography fontSize="22px" lineHeight="35px" mb={4} sx={{ color:"white"}}>
+        Over 1000 exercises to choose from
       </Typography>
       <Button
         variant="contained"
         color="error"
         href="#exercises"
-        sx={{ backgroundColor: "#ff2625", padding: "10px" }}
+        sx={{ backgroundColor: "white", color: 'black', padding: "10px" }}
       >
         Explore Exercises
       </Button>
-      <Typography
-        fontWeight={600}
-        color="
-      #ff2625"
-        sx={{ opacity: 0.1, display: { lg: "block", xs: "none" } }}
-        fontSize="200px"
-      >
-        Exercise
-      </Typography>
-      <img src={HeroBannerImage} alt="banner" className="hero-banner-img" />
+
     </Box>
   );
 };
