@@ -1,6 +1,6 @@
 # Revelation
 
-An exercise library that allows users to search for in depth exercise recommendations and videos. Over 1000 exercises to choose from an external API
+An exercise library created with ReactJS that allows users to search for in depth exercise recommendations and videos. Over 1000 exercises to choose from an external API.
 
 ## Final Product
 
