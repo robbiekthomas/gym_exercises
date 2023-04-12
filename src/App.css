@@ -23,18 +23,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FF2625;
+  color: grey;
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
   bottom: -20px;
-  right: 80px;
+  right: 880px;
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
+  
 }
 
 .right-arrow {
-  right: 140px;
+  right: 940px;
 }
 
 .right-arrow:hover,
@@ -85,9 +86,11 @@ body {
 }
 
 .search-btn:hover {
-  color: grey !important;
-  border: 1px solid grey !important;
+  color: black !important;
+  background-color: darkgrey !important;
 }
+
+
 
 .exercise-video {
   display: flex;
